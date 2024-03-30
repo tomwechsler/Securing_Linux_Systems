@@ -1,0 +1,48 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+#Place Vagrantfile in the directory you run vagrant from.
+
+#setting for the rocky VM
+Vagrant.configure("2") do |config|
+    #config.vm.box = "base"
+  
+  #settings for the ubuntu VM
+    config.vm.define "ubuntu" do |ubuntu|
+      ubuntu.vm.provider "virtualbox" do |vb_ubuntu|
+          vb_ubuntu.memory = "2048"
+          vb_ubuntu.cpus = "2"
+      end
+          
+        ubuntu.vm.box = "ubuntu/jammy64"
+      ubuntu.vm.hostname = "ubuntu"
+      ubuntu.vm.network "private_network", ip: "192.168.56.102"
+      
+    end
+   
+  #settings for the opensuse VM 
+    config.vm.define "opensuse" do |opensuse|
+        opensuse.vm.provider "virtualbox" do |vb_opensuse|
+          vb_opensuse.memory = "2048"
+          vb_opensuse.cpus = "2"
+      end
+      
+        opensuse.vm.box = "opensuse/Leap-15.4.x86_64"
+      opensuse.vm.hostname = "opensuse"
+        opensuse.vm.network "private_network", ip: "192.168.56.103"
+      
+    end
+    
+    #settings for the rocky VM
+    config.vm.define "rocky" do |rocky|
+        rocky.vm.provider "virtualbox" do |vb_rocky|
+          vb_rocky.memory = "2048"
+          vb_rocky.cpus = "2"
+        end
+    
+        rocky.vm.box = "rockylinux/9"
+        rocky.vm.hostname = "rocky"
+          rocky.vm.network "private_network", ip: "192.168.56.101"
+    
+      end
+  end
