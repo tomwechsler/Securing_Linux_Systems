@@ -5,6 +5,7 @@ Linux security with three different distributions (Ubuntu, openSUSE and Rocky Li
 
 | Sections | Section description             |
 |-----|-------------------------------------------|
+| A01 | Lab setup with Vagrant |
 | A02 | Why Securing Linux Systems
 | A03 | Understanding the File Mode or Permissions |
 | A04 | Managing Special File Permissions |
