@@ -1,6 +1,8 @@
 # Securing Linux Systems
 Linux security with three different distributions (Ubuntu, openSUSE and Rocky Linux)!
 
+<img src="/README.png" alt="The three different Linux distributions">
+
 ## Content of the sections
 
 | Sections | Section description             |

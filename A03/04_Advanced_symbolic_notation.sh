@@ -44,10 +44,3 @@ chmod -v +w newfile2
 
 #To change we need the "a"
 chmod -v a+w newfile2
-
-
-
-Often, it is incorrectly thought that symbolic permissions are simpler and only
-used when you start your administration career. This is far from the case as we
-see with -X. The upper-case X is used to set execute only of directories or files
-where execute is already set in one or more objects.

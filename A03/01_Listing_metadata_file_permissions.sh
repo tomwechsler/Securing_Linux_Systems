@@ -30,8 +30,3 @@ stat -c %x /etc/hosts
 stat -c %y /etc/hosts
 
 stat -c %z /etc/hosts
-
-
-Listing files with the -l option we can see more metadata from the file. This
-includes the file type, permissions, link count, ownership, file size and the last
-modified time. The command stat can also be used to view this data.
