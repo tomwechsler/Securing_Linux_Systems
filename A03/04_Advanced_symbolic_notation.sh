@@ -1,7 +1,7 @@
 #Working on ubuntu
 
 #Create some directories
-mkdir -p ubuntu/{20,18,16,14}.04/{gold,current}
+mkdir -p ubuntu/{22,20,18,16,14}.04/{gold,current}
 
 #Install tree
 sudp apt update && sudo apt install -y tree
@@ -19,10 +19,19 @@ umask 077
 rm -r ubuntu
 
 #Create the directories again
-mkdir -p ubuntu/{20,18,16,14}.04/{gold,current}
+mkdir -p ubuntu/{22,20,18,16,14}.04/{gold,current}
 
 #Show the permissions
 ls -lR ubuntu/
+
+#Create a new file named file1 in the /ubuntu directory
+touch /ubuntu/file1
+
+#List the details of file1 in the /ubuntu directory
+ls -l /ubuntu/file1
+
+#Recursively add execute permission to all users for directories under the ubuntu directory
+chmod -vR a+X ubuntu
 
 #Change the umask again
 umask 022

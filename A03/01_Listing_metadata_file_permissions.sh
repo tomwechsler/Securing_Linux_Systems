@@ -25,8 +25,11 @@ stat /etc/hosts
 stat -c %a /etc/hosts   #numbers
 stat -c %A /etc/hosts   #letters
 
+#Time of last access, human-readable
 stat -c %x /etc/hosts
 
+#Time of last data modification, human-readable
 stat -c %y /etc/hosts
 
+#Time of last status change, human-readable
 stat -c %z /etc/hosts
