@@ -1,9 +1,9 @@
-#Working on alma
+#Working on rocky
 
 #We install the apache web server
 sudo dnf install -y httpd
 
-#On alma the service will not be started
+#On rocky the service will not be started
 
 #The listening ports
 ss -ntl
@@ -21,5 +21,5 @@ sudo apt update && sudo apt install -y apache2
 #The listening ports
 ss -ntl
 
-#The permissions the same as on alma
+#The permissions the same as on rocky
 ls -ld /var/www/html

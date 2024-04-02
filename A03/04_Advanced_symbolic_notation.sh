@@ -4,7 +4,7 @@
 mkdir -p ubuntu/{22,20,18,16,14}.04/{gold,current}
 
 #Install tree
-sudp apt update && sudo apt install -y tree
+sudo apt update && sudo apt install -y tree
 
 #Tree
 tree ubuntu
