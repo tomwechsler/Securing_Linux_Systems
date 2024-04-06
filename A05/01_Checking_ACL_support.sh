@@ -27,6 +27,7 @@ mount -t xfs
 mount -t ext4
 
 #If an ext4 partition is present, we check for acl support
+lsblk
 sudo tune2fs -l /dev/sda2 | grep -i acl
 
 
