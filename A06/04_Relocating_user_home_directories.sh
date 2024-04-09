@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Check the man pages
 man semanage-fcontext
