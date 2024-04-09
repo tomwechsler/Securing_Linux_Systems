@@ -43,7 +43,7 @@ sudo touch /private/fileroot
 getfacl /private/fileroot
 
 #Set the ACL for the '/private' directory to give 'tux' user read and execute permissions with root privileges
-sudo setfacl -m u:tux:rx /private
+sudo setfacl -m u:tux:r-x /private
 
 #Get the ACL for the '/private' directory
 getfacl /private
@@ -55,7 +55,7 @@ sudo setfacl -x u:tux /private
 getfacl /private
 
 #Set the ACL for the '/private' directory to give 'wheel' group read and execute permissions with root privileges
-sudo setfacl -m g:wheel:rx /private
+sudo setfacl -m g:wheel:r-x /private
 
 #Get the ACL for the '/private' directory
 getfacl /private
