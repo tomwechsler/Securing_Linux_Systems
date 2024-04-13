@@ -1,4 +1,4 @@
-#Working on opensuse
+#Working on ubuntu
 
 #Start a root session
 sudo su -
@@ -7,7 +7,7 @@ sudo su -
 aa- TABTAB
 
 #Install the tools
-zypper in -y apparmor-utils
+apt install -y apparmor-utils
 
 #Check again
 aa- TABTAB
@@ -15,15 +15,9 @@ aa- TABTAB
 aa-status
 
 #Lets install the profiles
-zypper in -y apparmor-profiles
+apt install -y apparmor-profiles
 
 #Check the service
-rcapparmor status
-
-rcapparmor start
-
-rcapparmor status
-
 systemctl status apparmor
 
 #Show the status

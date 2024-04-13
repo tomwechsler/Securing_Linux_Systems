@@ -1,13 +1,13 @@
-#Working on opensuse with a root session
+#Working on ubuntu with a root session
 
 #Start a root session
 sudo su -
 
-#Install rsyslog
-zypper install -y rsyslog
+#Install rsyslog (optional)
+apt install -y rsyslog
 
-#Start the rsyslog service
-systemctl enable --now rsyslog
+#Check the rsyslog service
+systemctl status rsyslog
 
 #Generate a profile
 aa-genprof test.py

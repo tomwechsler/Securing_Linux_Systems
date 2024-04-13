@@ -1,4 +1,4 @@
-#Working on opensuse with a root session
+#Working on ubuntu with a root session
 
 #Create a python script
 vim test.py

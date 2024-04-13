@@ -1,16 +1,16 @@
-#Working on opensuse with a root session
+#Working on ubuntu with a root session
 
 #Show the status (no profiles are in complain mode)
 aa-status
 
 #We start an example with ntp
-sudo zypper install -y ntp
+sudo apt install -y ntp
 
 #Show the status (no change at this time)
 aa-status
 
 #Start the ntp service
-sudo systemctl start ntpd
+sudo systemctl status ntpd
 
 #Show the status (now there is a change)
 aa-status

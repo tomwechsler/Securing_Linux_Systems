@@ -1,4 +1,4 @@
-#Working on opensuse
+#Working on ubuntu
 
 #Open the script
 vim test.py
@@ -49,7 +49,7 @@ except:
 ./test.py
 
 #Edit the profile
-logprof
+aa-logprof
 
 Type A (Allow)
 
