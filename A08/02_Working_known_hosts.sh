@@ -42,10 +42,10 @@ ssh -o StrictHostKeyChecking=no 192.168.56.101
 
 exit
 
-#Rebuild the alma system - this does cause an message for the new ssh session
-#Switch to alma
-vagrant destroy alma
-vagrant up alma
+#Rebuild the rocky system - this does cause an message for the new ssh session
+#Switch to rocky
+vagrant destroy rocky
+vagrant up rocky
 
 #Back on Ubuntu
 ssh 192.168.56.101
