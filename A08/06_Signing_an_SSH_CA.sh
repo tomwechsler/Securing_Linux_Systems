@@ -2,7 +2,7 @@
 
 sudo su -
 
-#We need to publish our pub key to the remote systems
+#We need to grab the pub key from the remote systems
 scp vagrant@192.168.56.101:/etc/ssh/ssh_host_rsa_key.pub rocky.pub
 
 #Now we have the rocky.pub key locally
