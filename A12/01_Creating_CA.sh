@@ -11,8 +11,8 @@ pwd
 
 ls -a
 
-#First we create the private ke
-openssl genrsa -des -out myca.key 4096
+#First we create the private key
+openssl genrsa -aes256 -out myca.key 4096
 
 ls -a
 
