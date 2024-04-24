@@ -27,3 +27,16 @@ systemctl restart apache2
 
 #Check the config
 w3m https://ubuntu
+
+#On the rocky system
+
+vim /etc/hosts #Add the ubuntu IP address and hostname
+
+#Save and exit
+
+dnf install -y epel-release #Install the epel-release package
+
+dnf install -y w3m #Install the w3m package
+
+#Check the config
+w3m https://ubuntu
