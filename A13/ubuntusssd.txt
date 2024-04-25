@@ -1,0 +1,22 @@
+[sssd]
+domains = shadowutils, example.com
+
+[nss]
+
+[pam]
+
+[domain/example.com]
+id_provider = ldap
+auth_provider = ldap
+ldap_uri = ldap://ubuntu
+cache_credentials = True
+ldap_search_base = dc=example,dc=com
+ldap_id_use_start_tls = true
+
+[domain/shadowutils]
+id_provider = files
+
+auth_provider = proxy
+proxy_pam_target = sssd-shadowutils
+
+proxy_fast_alias = True

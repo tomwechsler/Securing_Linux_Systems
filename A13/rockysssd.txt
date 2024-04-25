@@ -1,0 +1,14 @@
+[sssd]
+domains = example.com
+services = nss, pam
+[nss]
+
+[pam]
+
+[domain/example.com]
+id_provider = ldap
+auth_provider = ldap
+ldap_uri = ldap://ubuntu
+cache_credentials = True
+ldap_search_base = dc=example,dc=com
+ldap_id_use_start_tls = true
