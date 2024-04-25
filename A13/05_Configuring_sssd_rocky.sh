@@ -1,7 +1,7 @@
 #Working on alma
 
 #Install the tools
-sudo yum install -y sssd sssd-ldap oddjob oddjob-mkhomedir
+sudo dnf install -y sssd sssd-ldap oddjob oddjob-mkhomedir
 
 #We need to be able to resolve the ubuntu system
 echo '192.168.56.102 ubuntu' | sudo tee -a /etc/hosts
