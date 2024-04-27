@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Install the tools
 sudo dnf install -y sssd sssd-ldap oddjob oddjob-mkhomedir
