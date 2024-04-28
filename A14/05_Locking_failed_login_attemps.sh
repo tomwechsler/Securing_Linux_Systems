@@ -17,7 +17,7 @@ man pam_faillock.conf
 #Edit the file
 sudo vim /etc/pam.d/common-auth
 
-#The First line
+#The First line (if you remove the silent, you will see the message)
 auth    required pam_faillock.so preauth audit silent deny=3 unlock_time=300
 
 #This lines bevor auth requisite pam_deny.so
