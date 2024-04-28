@@ -1,17 +1,10 @@
 #Working on rocky in a root session
 
-#Check the services
-systemctl status firewalld
+#List the info
+firewall-cmd --list-all
 
-#The firewall config file
+#The firewalld.conf file
 vim /etc/firewalld/firewalld.conf
-
-AllowZoneDrifting=no
-
-#Save and exit
-
-#Restart the services
-systemctl restart firewalld
 
 #List the info
 firewall-cmd --list-all
