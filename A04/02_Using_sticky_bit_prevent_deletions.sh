@@ -16,14 +16,19 @@ ls -ld /tmp
 #Create a directory and change the perms/group
 sudo mkdir /admin
 
+#Change the group ownership of /admin to wheel
 sudo chgrp wheel /admin
 
+#Display the detailed listing of the /admin directory
 ls -ld /admin
 
+#Remove all permissions for others on /admin
 sudo chmod -v o= /admin
 
+#Display the detailed listing of the /admin directory again
 ls -ld /admin
 
+#Add write permission for the group on /admin
 sudo chmod -v g+w /admin
 
 #Now lets create some files
