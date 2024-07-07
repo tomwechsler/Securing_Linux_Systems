@@ -29,7 +29,3 @@ mount -t ext4
 #If an ext4 partition is present, we check for acl support
 lsblk
 sudo tune2fs -l /dev/sda2 | grep -i acl
-
-
-#Access Control Lists allow for more than one user or group to have the same or similar permissions to a file
-#resource. We can also set default permissions allowing new files or directories to inherit from the parent
