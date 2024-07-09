@@ -29,9 +29,3 @@ getenforce
 
 #To change SELinux at this time will not work anymore
 sudo setenforce 0
-
-
-
-#An administrator may quickly change the SELinux mode to allow something to happen
-#that is not a permitted Setting. The Boolean will require a reboot of the system to 
-#change the SELinux mode. Use the option -P to persist the change

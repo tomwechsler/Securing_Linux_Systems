@@ -31,18 +31,3 @@ restorecon -v /etc/shadow
 
 #Now it works
 chage -l vagrant
-
-
-
-
-#In the main, SELinux works with soething called type enforcment. The SELinux type of a source must be
-#compatible with the target SELinux type. If we need to customize content or if we make erroneous changes,
-#operations may not work.
-
-#In the main the targeted SELinux policy works with the context of processes, ports and files.
-#The option -Z displays the context with most tools. Processes need to be authorized to access
-#resources such as ports and files
-
-#The /etc/shadow file is a critical system file. Processes can only access this is the correct
-#context is set on the file and matches rules that allow the process access. Taking care not to
-#break your system we can demonstrate SELinux at work.
