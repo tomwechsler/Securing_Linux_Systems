@@ -6,15 +6,17 @@ cd .ssh
 #List the content
 ls
 
+#Count the lines in known_hosts
 wc -l known_hosts
 
+#Show the content
 cat known_hosts
 
 #Lets delete the file
 rm known_hosts
 
 #Start a ssh session
-ssh 192.168.56.101
+ssh 192.168.56.103
 
 exit
 
@@ -22,7 +24,7 @@ exit
 cat known_hosts
 
 #No host checking
-ssh -o StrictHostKeyChecking=no 192.168.56.101
+ssh -o StrictHostKeyChecking=no 192.168.56.103
 
 exit
 
@@ -38,20 +40,20 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null 192.168.56.103
 exit
 
 #No host checking
-ssh -o StrictHostKeyChecking=no 192.168.56.101
+ssh -o StrictHostKeyChecking=no 192.168.56.103
 
 exit
 
-#Rebuild the rocky system - this does cause an message for the new ssh session
-#Switch to rocky
-vagrant destroy rocky
-vagrant up rocky
+#Rebuild the openSUSE system - this does cause an message for the new ssh session
+#Switch to openSUSE
+vagrant destroy openSUSE
+vagrant up openSUSE
 
 #Back on Ubuntu
-ssh 192.168.56.101
+ssh 192.168.56.103
 
 #Change the config
-ssh-keygen -R 192.168.56.101
+ssh-keygen -R 192.168.56.103
 
 #Set the options in a config file
 vim config

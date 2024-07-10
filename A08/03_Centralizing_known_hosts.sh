@@ -5,10 +5,10 @@ rm config
 rm known_hosts
 
 #Show with ssh key-keyscan what we get from the remote system
-ssh-keyscan 192.168.56.101
+ssh-keyscan 192.168.56.103
 
 #We can show a specfic key
-ssh-keyscan -t ecdsa 192.168.56.101
+ssh-keyscan -t ecdsa 192.168.56.103
 
 #Now we store the key in a central store (-a to append)
 ssh-keyscan -t ecdsa 192.168.56.101 | sudo tee -a /etc/ssh/ssh_known_hosts
