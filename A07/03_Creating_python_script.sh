@@ -22,6 +22,8 @@ chmod u+x test.py
 #Test it
 ./test.py
 
+#List the content
 ls
 
+#Remove the file
 rm mytext

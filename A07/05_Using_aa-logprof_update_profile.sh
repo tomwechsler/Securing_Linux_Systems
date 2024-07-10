@@ -19,6 +19,7 @@ except:
 #Test the script
 ./test.py
 
+#List the content
 cat mytext
 
 #Open the script

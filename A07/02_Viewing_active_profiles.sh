@@ -9,8 +9,11 @@ sudo zypper in -y ntp
 #Show the status (no change at this time)
 aa-status
 
-#Start the ntp service
+#The status of ntp service
 sudo systemctl status ntpd
+
+#Start the ntp service
+sudo systemctl start ntpd
 
 #Show the status (now there is a change)
 aa-status
