@@ -1,10 +1,10 @@
-#Working on ubuntu with a root session
+#Working on opensuse
 
 #Show the status (no profiles are in complain mode)
 aa-status
 
 #We start an example with ntp
-sudo apt install -y ntp
+sudo zypper in -y ntp
 
 #Show the status (no change at this time)
 aa-status

@@ -1,4 +1,4 @@
-#Working on ubuntu
+#Working on opensuse
 
 #Start a root session
 sudo su -
@@ -7,7 +7,7 @@ sudo su -
 aa- TABTAB
 
 #Install the tools
-apt install -y apparmor-utils
+zypper in -y apparmor-utils
 
 #Check again
 aa- TABTAB
@@ -15,15 +15,10 @@ aa- TABTAB
 aa-status
 
 #Lets install the profiles
-apt install -y apparmor-profiles
+zypper in -y apparmor-profiles
 
 #Check the service
 systemctl status apparmor
 
 #Show the status
 aa-status
-
-
-
-#Adding the tools will enable AppArmor on your system but without profiles. Adding
-#profiles add targets to secure.

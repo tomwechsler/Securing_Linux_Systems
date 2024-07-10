@@ -1,5 +1,7 @@
 #Working on ubuntu with a root session
 
+apt update && apt install -y apparmor-utils apparmor-profiles
+
 #Create a python script
 vim test.py
 

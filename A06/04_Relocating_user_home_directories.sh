@@ -35,10 +35,3 @@ sudo useradd -m -d /staff/u1 u1
 
 #Check SELiunx
 sudo ls -ldZ /staff/u1
-
-
-
-#The file context used by restorecon are part of the current SELinux policy. Relocating user
-#home directories, for example, we can create the top-level directory and store the definition by
-#cloning the configuration of the existing home. This ensures the correct SELinux context on
-#user home directories created below staff.
