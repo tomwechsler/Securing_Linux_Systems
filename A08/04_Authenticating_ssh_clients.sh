@@ -33,8 +33,3 @@ ssh-copy-id 192.168.56.103
 
 #No prompt for the passphrase
 ssh 192.168.56.103
-
-
-
-#Using key based authentication, we will not need to add passwords. Becoming more convenient
-#as well as more secure. Client public keys are stored in the target users authorized_keys file.

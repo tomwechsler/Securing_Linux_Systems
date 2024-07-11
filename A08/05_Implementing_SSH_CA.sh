@@ -20,9 +20,3 @@ vim /etc/ssh/ssh_known_hosts
 @cert-authority 192.168.56.* # append <before ssh-rsa>
 
 #Save and exit
-
-
-
-
-#Creating a Certificate Authority on the Ubuntu system allows us to sign certificates for all host
-#meaning clients only need to trust the CA
