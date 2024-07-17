@@ -51,12 +51,3 @@ useradd -m -G wheel -c 'user two' u2
 ls /home
 
 id u2
-
-
-
-#When creating a user we can specify just the login name, the rest will come from the user
-#defaults.
-
-#The option -N specifies not to create a user group, the primary group will now be from the 
-#defaults. The option -G allows us to specify complimentary groups, here we add the user to the
-#wheel group. The option -c allows the setting of the full name or user comment.

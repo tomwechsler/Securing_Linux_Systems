@@ -22,16 +22,8 @@ grep passwd /etc/nsswitch.conf
 #Search for vagrant
 grep vagrant /etc/passwd
 
+#Use cut to print the first and third fields
 cut -f1,3 -d: /etc/passwd | grep vagrant
 
+#Use awk to print the first and third fields
 awk -F: '/vagrant/ { print $1 " " $3}' /etc/passwd
-
-
-
-
-#The local user account database is the file /etc/passwd. This is a text file accessible by all
-#users. It is not usual to store passwords in this file anymore. The command getent can be
-#used to display or search the database.
-
-#Typically, the command cut is used to filter the fields; however, we may also need to use grep
-#to search for a specific user. Using awk we can cover both with the one command.

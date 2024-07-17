@@ -26,9 +26,3 @@ userdel -r u2
 
 #Nothing left
 find /home /var -nouser
-
-
-#The same options to useradd or available to usermod which is used to modify user accounts.
-
-#Deleting users is affected using userdel. The option -r deletes the home directory, mail spool
-#files and user cron jobs

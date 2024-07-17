@@ -30,8 +30,3 @@ sudo getent shadow vagrant
 
 #What about 19079
 date --date '19079 days ago'
-
-
-
-#Using the command chage (change age) a user can see their own shadow data, root can see
-#and change all shadow data
