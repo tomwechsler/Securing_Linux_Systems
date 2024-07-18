@@ -34,9 +34,3 @@ id u99
 groupdel sales
 
 id u99
-
-
-
-#Within the useradd or usermod command we have -g for the users primary group. This can be a 
-#single value only; however, the -G for secondary groups allow for many groups. We can specify
-#a new list or use -a the append the existing groups.

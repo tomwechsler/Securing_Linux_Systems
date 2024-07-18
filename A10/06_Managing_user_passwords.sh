@@ -34,14 +34,3 @@ useradd -r u3
 echo "P@ssw0rd" | passwd u3 --stdin
 
 chage -l u3
-
-
-
-#Commonly, the command passwd is used to set the password. If you use both Debian and
-#RedHat based systems, the chpasswd command is useful for non-interactive password setting.
-#The passwd command is also useful for locking a users account, perhaps while they are on
-#vacation. Use -l to lock, -S to check status and -u to unlock.
-
-#Having modified the login.defs, this will work for standard interactive users. For systems
-#accounts we dont want the password to expire using the useradd option -r we by-pass the
-#restrictions in login.defs. We can use chage to set explicit information for any account.

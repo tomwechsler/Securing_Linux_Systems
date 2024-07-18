@@ -20,13 +20,3 @@ openssl passwd -6 P@ssword
 openssl passwd -6 P@ssword
 
 openssl passwd -6 P@ssword
-
-
-
-
-#Passwords are stored within the second field of the shadow file. The entry itself is broken down
-#3 separate entities: the algorithm, the SALT and the password hash.
-
-#We can quickli create a user account setting its password. RedHat based systems have the
-#option --stdin but Debian based systems do not. We can show the authentication process by
-#using the openssl command
