@@ -7,6 +7,7 @@ usermod -c 'User One' -aG wheel -g users u1
 
 id u1
 
+#List the user u1
 getent passwd u1
 
 #Delete a user
