@@ -32,3 +32,5 @@ w3m localhost
 
 #Show listening TCP ports, port 80 (HTTP) will be open
 ss -ntl
+
+ss -ntlp

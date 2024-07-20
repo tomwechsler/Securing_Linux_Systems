@@ -42,8 +42,3 @@ w3m https://ubuntu:443
 
 #This will show a message about the cert
 w3m https://localhost:443
-
-
-
-#Using openssl we can create a self-signed key pair. The default uses a self-signed "snakeoil" key
-#pair. The default configuration can be edited to use our key pair and the correct hostname.

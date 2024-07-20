@@ -22,6 +22,3 @@ systemctl restart apache2
 w3m http://ubuntu
 
 #We are using https
-
-
-#To secure the web server, we should ensure HTTPS is used by redirecting HTTP to HTTPS
