@@ -1,6 +1,6 @@
 #Working on ubuntu
 
-#Create a ldif file
+#Create a ldif file (Leightweight Directory Interchange Format)
 vim user.ldif
 
 #Copy the content from the example file

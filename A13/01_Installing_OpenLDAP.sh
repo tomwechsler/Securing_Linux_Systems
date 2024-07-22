@@ -24,7 +24,7 @@ sudo apt install -y slapd ldap-utils #<prompt to add new password for ldap admin
 #Check the open ports
 ss -ntl
 
-#Whoami (-x Use simple authentication instead of SASL)
+#Whoami (-x Use simple authentication instead of SASL (Simple Authentication and Security Layer)
 ldapwhoami -x
 
 ldapwhoami -Q -Y EXTERNAL -H ldapi:/// # -Q Enable SASL Quiet mode; -Y Specify the SASL mechanism to be used for authentication, -H ldapuri
