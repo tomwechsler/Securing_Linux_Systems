@@ -34,8 +34,3 @@ firewall-cmd --list-all --permanent
 
 #Make it persistent
 firewall-cmd --runtime-to-permanent
-
-
-
-#Many common services will have an XML file representing their needs, we add these files to the
-#configuration using--add-service. When tested, we can persist the settings with --runtime-to-permanent.
