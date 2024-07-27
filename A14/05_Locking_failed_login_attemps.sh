@@ -12,7 +12,7 @@ exit
 sudo apt install libpam-modules
 
 #Check the man pages
-man pam_faillock.conf
+man pam_faillock
 
 #Edit the file
 sudo vim /etc/pam.d/common-auth
