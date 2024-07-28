@@ -20,7 +20,7 @@ firewall-cmd --state
 #The status
 firewall-cmd --list-all
 
-#Public Zone wirh two interfaces
+#Public Zone with two interfaces
 
 #List the permanent config
 firewall-cmd --list-all --permanent
