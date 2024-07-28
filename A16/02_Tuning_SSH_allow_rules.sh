@@ -21,7 +21,7 @@ ufw status
 #Now delete rule 3 and 1
 ufw delete 3
 
-ufw delete 3
+ufw delete 1
 
 #Lets proof
 ufw status
